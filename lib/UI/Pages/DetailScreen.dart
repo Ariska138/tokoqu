@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tokoqu/Data/TourismPlace.dart';
-import 'package:tokoqu/Stateless/DetailMobilePage.dart';
-import 'package:tokoqu/Stateless/DetailWebPage.dart';
+import 'package:tokoqu/UI/Pages/DetailMobilePage.dart';
+import 'package:tokoqu/UI/Pages/DetailWebPage.dart';
 
 var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
 class DetailScreen extends StatelessWidget {

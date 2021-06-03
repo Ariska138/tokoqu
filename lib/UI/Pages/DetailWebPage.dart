@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:tokoqu/Data/TourismPlace.dart';
 import 'package:flutter/material.dart';
-import 'package:tokoqu/Stateful/FavoriteButton.dart';
-import 'package:tokoqu/Stateless/DetailScreen.dart';
+import 'package:tokoqu/UI/Widgets/FavoriteButton.dart';
+import 'package:tokoqu/UI/Pages/DetailScreen.dart';
 
 class DetailWebPage extends StatefulWidget {
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tokoqu/Stateless/PlaceGrid.dart';
-import 'package:tokoqu/Stateless/PlaceList.dart';
+import 'package:tokoqu/UI/Pages/PlaceGrid.dart';
+import 'package:tokoqu/UI/Pages/PlaceList.dart';
 
 class MainScreen extends StatelessWidget {
   @override

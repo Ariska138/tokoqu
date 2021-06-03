@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tokoqu/Data/TourismPlace.dart';
-import 'package:tokoqu/Stateless/DetailScreen.dart';
+import 'package:tokoqu/UI/Pages/DetailScreen.dart';
 
 class PlaceList extends StatelessWidget {
   const PlaceList({Key? key}) : super(key: key);
