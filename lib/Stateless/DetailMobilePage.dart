@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tokoqu/Data/TourismPlace.dart';
-import 'package:tokoqu/Statefull/FavoriteButton.dart';
+import 'package:tokoqu/Stateful/FavoriteButton.dart';
 import 'package:tokoqu/Stateless/DetailScreen.dart';
 
 class DetailMobilePage extends StatelessWidget {

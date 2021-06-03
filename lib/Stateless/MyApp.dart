@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tokoqu/Statefull/MyHomePage.dart';
+import 'package:tokoqu/Stateful/MyHomePage.dart';
 import 'package:tokoqu/Stateless/MainScreen.dart';
 
 class MyApp extends StatelessWidget {
