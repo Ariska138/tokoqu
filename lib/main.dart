@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokoqu/UI/Pages/Homepage.dart';
 import 'package:tokoqu/UI/Pages/MainScreen.dart';
 
 void main() => runApp(MyApp());
@@ -8,12 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: true,
       title: 'Flutter Demo',
       theme: ThemeData(
 
         primarySwatch: Colors.cyan,
       ),
-      home: MainScreen(),
+      home: Homepage(),
     );
   }
 }
