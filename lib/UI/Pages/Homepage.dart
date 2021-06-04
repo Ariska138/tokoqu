@@ -1,23 +1,27 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:tokoqu/Data/ProductStore.dart';
 import 'package:tokoqu/Data/RawProducts.dart';
 import 'package:tokoqu/UI/Pages/ProductGrid.dart';
+
+
 
 class Homepage extends StatelessWidget {
 
   late final List<ProductStore> products;
 
-  @override
-  Widget build(BuildContext context) {
-
+  Homepage(){
     products =(json.decode(rawProducts) as List).map((i) =>
         ProductStore.fromJson(i)).toList();
 
     debugPrint("products: "+products[0].description);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
+
 
     var size = MediaQuery.of(context).size;
 
@@ -48,9 +52,13 @@ class Homepage extends StatelessWidget {
               if (constraints.maxWidth <= 768) {
                 return ProductGrid(gridCount: 2, products: products);
               } else if (constraints.maxWidth <= 1024) {
-                return Text('Goat Manager Table');
+                return ProductGrid(gridCount: 4, products: products);
               } else {
-                return Text('Goat Manager PC');
+                return Center(
+                  child: Container(
+                      constraints: BoxConstraints(maxWidth: 1024),
+                      child: ProductGrid(gridCount: 4, products: products)),
+                );
               }
             },
           ),

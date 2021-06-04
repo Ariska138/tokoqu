@@ -34,10 +34,18 @@ class ProductGrid extends StatelessWidget {
               new BoxShadow(
                 color: Colors.black12,
                 blurRadius: 5.0,
+
               ),
             ],
+              shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(15.0)),
           ),
+
           child: Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
