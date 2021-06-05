@@ -39,12 +39,12 @@ class _State extends State<CategoriesList> {
           });
         },
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 6.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(left: 16.0, top: 3.0, right: 16.0, bottom: 3.0),
+                padding: EdgeInsets.only(left: 16.0, top: 3.0, right: 16.0, bottom: 1.0),
                 decoration: ShapeDecoration(
                   color: selectedIndex == index ? Colors.white: Colors.grey,
                   shape: RoundedRectangleBorder(
