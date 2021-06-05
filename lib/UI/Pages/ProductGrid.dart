@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tokoqu/Data/ProductStore.dart';
+import 'package:tokoqu/UI/Pages/DetailProductPage.dart';
 
 class ProductGrid extends StatelessWidget {
 
@@ -24,9 +25,9 @@ class ProductGrid extends StatelessWidget {
         children: products.map((product){
       return InkWell(
         onTap: (){
-        // Navigator.push(context, MaterialPageRoute(builder: (context){
-        //   return DetailScreen(place: place);
-        // }));
+        Navigator.push(context, MaterialPageRoute(builder: (context){
+          return DetailProductPage(product: product,);
+        }));
       },
         child: Container(
           decoration: new BoxDecoration(
@@ -34,7 +35,6 @@ class ProductGrid extends StatelessWidget {
               new BoxShadow(
                 color: Colors.black12,
                 blurRadius: 5.0,
-
               ),
             ],
               shape: BoxShape.rectangle,
