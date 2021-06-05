@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+// import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tokoqu/Data/ProductStore.dart';
 import 'package:tokoqu/Data/RawProducts.dart';
 import 'package:tokoqu/UI/Pages/ProductGrid.dart';
@@ -60,7 +62,8 @@ class Homepage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     CategoriesList(categories: categories),
-                    Expanded(child: ProductGrid(gridCount: 2, products: productsAppeared)),
+                    Expanded(
+                        child: ProductGrid(gridCount: 2, products: productsAppeared)),
                   ],
                 );
               } else if (constraints.maxWidth <= 1024) {
@@ -104,6 +107,17 @@ class Homepage extends StatelessWidget {
       // elevation: 20,
       // shadowColor: Colors.cyan.shade100,
       // brightness: Brightness.dark,
+      actions: <Widget>[
+        IconButton(
+          icon: SvgPicture.asset("icons/search.svg"),
+          onPressed: () {},
+        ),
+        IconButton(
+          icon: SvgPicture.asset("icons/cart.svg"),
+          onPressed: () {},
+        ),
+        SizedBox(width: 8)
+      ],
     );
   }
 }
