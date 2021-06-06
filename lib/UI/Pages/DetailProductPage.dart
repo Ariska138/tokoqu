@@ -46,12 +46,12 @@ class DetailProductPage extends StatelessWidget {
       // brightness: Brightness.dark,
       actions: <Widget>[
         IconButton(
-          icon: SvgPicture.asset("icons/search.svg", color: Colors.black,),
+          icon: FaIcon(FontAwesomeIcons.search),
           // color: Colors.black,
           onPressed: () {},
         ),
         IconButton(
-          icon: SvgPicture.asset("icons/cart.svg", color: Colors.black,),
+          icon: FaIcon(FontAwesomeIcons.shoppingCart),
           onPressed: () {},
         ),
         SizedBox(width: 8)

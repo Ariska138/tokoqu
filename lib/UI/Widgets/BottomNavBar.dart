@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -24,10 +25,7 @@ class BottomNavBar extends StatelessWidget {
           ),
         ),
         child: IconButton(
-          icon: SvgPicture.asset(
-            "icons/add_to_cart.svg",
-            color: Colors.red,
-          ),
+          icon: FaIcon(FontAwesomeIcons.cartPlus, color: Colors.red,),
           onPressed: () {},
         ),
       ),
