@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tokoqu/UI/Pages/Homepage.dart';
-import 'package:tokoqu/UI/Pages/MainScreen.dart';
 
 void main() => runApp(MyApp());
 
