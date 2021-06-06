@@ -12,15 +12,18 @@ class _FavoriteButtonState extends State<FavoriteButton> {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-        onPressed: (){
-          setState(() {
-            isFavorite = !isFavorite;
-          });
-        },
-        icon: Icon(
-      isFavorite ? Icons.favorite : Icons.favorite_border,
-      color: Colors.red,
-    ));
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: IconButton(
+          onPressed: (){
+            setState(() {
+              isFavorite = !isFavorite;
+            });
+          },
+          icon: Icon(
+        isFavorite ? Icons.favorite : Icons.favorite_border,
+        color: Colors.red,
+      )),
+    );
   }
 }
