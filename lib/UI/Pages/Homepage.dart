@@ -64,7 +64,7 @@ class Homepage extends StatelessWidget {
                   children: <Widget>[
                     CategoriesList(categories: categories),
                     Expanded(
-                        child: ProductGrid(gridCount: 2, products: productsAppeared)),
+                        child: ProductGrid(gridCount: 2, products: productsAppeared, isMobile: true,)),
                   ],
                 );
               } else if (constraints.maxWidth <= 1024) {
@@ -72,7 +72,7 @@ class Homepage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     CategoriesList(categories: categories),
-                    Expanded(child: ProductGrid(gridCount: 4, products: productsAppeared)),
+                    Expanded(child: ProductGrid(gridCount: 4, products: productsAppeared, isMobile: false)),
                   ],
                 );
               } else {
@@ -83,7 +83,7 @@ class Homepage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
               CategoriesList(categories: categories),
-              Expanded(child: ProductGrid(gridCount: 4, products: productsAppeared)),
+              Expanded(child: ProductGrid(gridCount: 4, products: productsAppeared, isMobile: false)),
               ],
               ),
                   ),

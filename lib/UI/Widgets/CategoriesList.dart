@@ -18,7 +18,7 @@ class _State extends State<CategoriesList> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
-        height: 25,
+        height: 30,
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: widget.categories.length,
@@ -39,12 +39,12 @@ class _State extends State<CategoriesList> {
           });
         },
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 6.0),
+          padding: const EdgeInsets.only(right: 6.0, left: 6.0, top:0.0, bottom: 0.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(left: 16.0, top: 3.0, right: 16.0, bottom: 1.0),
+                padding: EdgeInsets.only(left: 16.0, top: 3.0, right: 16.0, bottom: 3.0),
                 decoration: ShapeDecoration(
                   color: selectedIndex == index ? Colors.white: Colors.grey,
                   shape: RoundedRectangleBorder(
