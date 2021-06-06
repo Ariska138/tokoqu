@@ -104,7 +104,7 @@ class Homepage extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-      centerTitle: true,
+      centerTitle: false,
       title: Text(
         'Tokoqu',
         style: TextStyle(
@@ -116,11 +116,11 @@ class Homepage extends StatelessWidget {
       // brightness: Brightness.dark,
       actions: <Widget>[
         IconButton(
-          icon: SvgPicture.asset("icons/search.svg"),
+          icon: FaIcon(FontAwesomeIcons.search, color: Colors.white,),
           onPressed: () {},
         ),
         IconButton(
-          icon: SvgPicture.asset("icons/cart.svg"),
+          icon: FaIcon(FontAwesomeIcons.shoppingCart, color: Colors.white,),
           onPressed: () {},
         ),
         SizedBox(width: 8)
