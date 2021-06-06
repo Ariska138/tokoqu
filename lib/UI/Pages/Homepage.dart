@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 // import 'package:flutter_svg/svg.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tokoqu/Data/ProductStore.dart';
 import 'package:tokoqu/Data/RawProducts.dart';
 import 'package:tokoqu/UI/Pages/ProductGrid.dart';
@@ -92,6 +93,12 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ]),
+        floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        tooltip: 'whatsapp',
+          backgroundColor: Colors.green,
+    child: FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white,),
+    ),
     );
   }
 
