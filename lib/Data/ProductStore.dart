@@ -4,7 +4,7 @@ class ProductStore {
 
   int id;
   String title;
-  double price;
+  String price;
   String description;
   String category;
   String image;
@@ -22,7 +22,7 @@ class ProductStore {
     return new ProductStore(
         id: json['id'],
         title: json['title'],
-        price: json['price'],
+        price: json['price'].toString(),
         description: json['description'],
         category: json['category'],
         image: json['image']
